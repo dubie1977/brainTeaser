@@ -1,0 +1,6 @@
+framework module Pods_brainTeaser_DuBay {
+  umbrella header "Pods-brainTeaser-DuBay-umbrella.h"
+
+  export *
+  module * { export * }
+}

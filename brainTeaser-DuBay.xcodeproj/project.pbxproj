@@ -7,23 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E4C985667096D4EEF40E852 /* Pods_brainTeaser_DuBay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9D4F18E80799157D0E7AE3 /* Pods_brainTeaser_DuBay.framework */; };
+		8C822C061D7E80B7007C121B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C822C051D7E80B7007C121B /* CustomButton.swift */; };
 		8C9481A71D7E24B6009DE57D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9481A61D7E24B6009DE57D /* AppDelegate.swift */; };
-		8C9481A91D7E24B6009DE57D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9481A81D7E24B6009DE57D /* ViewController.swift */; };
+		8C9481A91D7E24B6009DE57D /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9481A81D7E24B6009DE57D /* LogInVC.swift */; };
 		8C9481AC1D7E24B6009DE57D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9481AA1D7E24B6009DE57D /* Main.storyboard */; };
 		8C9481AF1D7E24B6009DE57D /* brainTeaser_DuBay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C9481AD1D7E24B6009DE57D /* brainTeaser_DuBay.xcdatamodeld */; };
 		8C9481B11D7E24B6009DE57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9481B01D7E24B6009DE57D /* Assets.xcassets */; };
 		8C9481B41D7E24B6009DE57D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9481B21D7E24B6009DE57D /* LaunchScreen.storyboard */; };
+		8C9481C11D7E3BB4009DE57D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9481C01D7E3BB4009DE57D /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A78C834CB10B7723D85217F /* Pods-brainTeaser-DuBay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainTeaser-DuBay.release.xcconfig"; path = "Pods/Target Support Files/Pods-brainTeaser-DuBay/Pods-brainTeaser-DuBay.release.xcconfig"; sourceTree = "<group>"; };
+		6AC95366FA8B245C141ECF85 /* Pods-brainTeaser-DuBay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainTeaser-DuBay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brainTeaser-DuBay/Pods-brainTeaser-DuBay.debug.xcconfig"; sourceTree = "<group>"; };
+		8C822C051D7E80B7007C121B /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8C9481A31D7E24B6009DE57D /* brainTeaser-DuBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "brainTeaser-DuBay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9481A61D7E24B6009DE57D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C9481A81D7E24B6009DE57D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C9481A81D7E24B6009DE57D /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		8C9481AB1D7E24B6009DE57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C9481AE1D7E24B6009DE57D /* brainTeaser_DuBay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = brainTeaser_DuBay.xcdatamodel; sourceTree = "<group>"; };
 		8C9481B01D7E24B6009DE57D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C9481B31D7E24B6009DE57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C9481B51D7E24B6009DE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9481BB1D7E2983009DE57D /* brainTeaser-DuBay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "brainTeaser-DuBay-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C9481C01D7E3BB4009DE57D /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		AC9D4F18E80799157D0E7AE3 /* Pods_brainTeaser_DuBay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brainTeaser_DuBay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4C985667096D4EEF40E852 /* Pods_brainTeaser_DuBay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38994FB0520ABE02B63AEB57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC9D4F18E80799157D0E7AE3 /* Pods_brainTeaser_DuBay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		661396613DA3E27163E81C29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AC95366FA8B245C141ECF85 /* Pods-brainTeaser-DuBay.debug.xcconfig */,
+				4A78C834CB10B7723D85217F /* Pods-brainTeaser-DuBay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8C94819A1D7E24B6009DE57D = {
 			isa = PBXGroup;
 			children = (
 				8C9481A51D7E24B6009DE57D /* brainTeaser-DuBay */,
 				8C9481A41D7E24B6009DE57D /* Products */,
+				661396613DA3E27163E81C29 /* Pods */,
+				38994FB0520ABE02B63AEB57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +85,34 @@
 		8C9481A51D7E24B6009DE57D /* brainTeaser-DuBay */ = {
 			isa = PBXGroup;
 			children = (
+				8C9481BF1D7E3B7B009DE57D /* Controller */,
+				8C9481BE1D7E3B70009DE57D /* View */,
 				8C9481A61D7E24B6009DE57D /* AppDelegate.swift */,
-				8C9481A81D7E24B6009DE57D /* ViewController.swift */,
 				8C9481AA1D7E24B6009DE57D /* Main.storyboard */,
 				8C9481B01D7E24B6009DE57D /* Assets.xcassets */,
 				8C9481B21D7E24B6009DE57D /* LaunchScreen.storyboard */,
 				8C9481B51D7E24B6009DE57D /* Info.plist */,
 				8C9481AD1D7E24B6009DE57D /* brainTeaser_DuBay.xcdatamodeld */,
+				8C9481BB1D7E2983009DE57D /* brainTeaser-DuBay-Bridging-Header.h */,
 			);
 			path = "brainTeaser-DuBay";
+			sourceTree = "<group>";
+		};
+		8C9481BE1D7E3B70009DE57D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C9481C01D7E3BB4009DE57D /* CustomTextField.swift */,
+				8C822C051D7E80B7007C121B /* CustomButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8C9481BF1D7E3B7B009DE57D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C9481A81D7E24B6009DE57D /* LogInVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C9481B81D7E24B6009DE57D /* Build configuration list for PBXNativeTarget "brainTeaser-DuBay" */;
 			buildPhases = (
+				9B46969ECAE56CAB946B4CC9 /* [CP] Check Pods Manifest.lock */,
 				8C94819F1D7E24B6009DE57D /* Sources */,
 				8C9481A01D7E24B6009DE57D /* Frameworks */,
 				8C9481A11D7E24B6009DE57D /* Resources */,
+				B03E58FB828B46333F60B55F /* [CP] Embed Pods Frameworks */,
+				1AF113CEB66C3570B86EAF22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,14 +185,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AF113CEB66C3570B86EAF22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brainTeaser-DuBay/Pods-brainTeaser-DuBay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B46969ECAE56CAB946B4CC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B03E58FB828B46333F60B55F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brainTeaser-DuBay/Pods-brainTeaser-DuBay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8C94819F1D7E24B6009DE57D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9481A91D7E24B6009DE57D /* ViewController.swift in Sources */,
+				8C9481C11D7E3BB4009DE57D /* CustomTextField.swift in Sources */,
+				8C9481A91D7E24B6009DE57D /* LogInVC.swift in Sources */,
 				8C9481AF1D7E24B6009DE57D /* brainTeaser_DuBay.xcdatamodeld in Sources */,
 				8C9481A71D7E24B6009DE57D /* AppDelegate.swift in Sources */,
+				8C822C061D7E80B7007C121B /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,23 +355,32 @@
 		};
 		8C9481B91D7E24B6009DE57D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC95366FA8B245C141ECF85 /* Pods-brainTeaser-DuBay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "brainTeaser-DuBay/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.designs.dubay.brainTeaser-DuBay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "brainTeaser-DuBay/brainTeaser-DuBay-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8C9481BA1D7E24B6009DE57D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A78C834CB10B7723D85217F /* Pods-brainTeaser-DuBay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "brainTeaser-DuBay/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.designs.dubay.brainTeaser-DuBay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "brainTeaser-DuBay/brainTeaser-DuBay-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -293,6 +403,7 @@
 				8C9481BA1D7E24B6009DE57D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

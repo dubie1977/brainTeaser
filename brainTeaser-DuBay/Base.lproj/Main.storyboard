@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LogInVC" customModule="brainTeaser_DuBay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="1am-Ty-Cys">
+                                <rect key="frame" x="220" y="30" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="N1f-Dv-ban"/>
+                                    <constraint firstAttribute="width" constant="160" id="uuF-iC-w57"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9en-8M-26b" customClass="CustomTextField" customModule="brainTeaser_DuBay" customModuleProvider="target">
+                                <rect key="frame" x="175" y="290" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.88373963789999999" green="0.88373963789999999" blue="0.88373963789999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bh0-JZ-ifc"/>
+                                    <constraint firstAttribute="width" constant="250" id="Lqb-9g-xiu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmn-v1-oux" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
+                                <rect key="frame" x="225" y="360" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="16t-ui-b90"/>
+                                    <constraint firstAttribute="height" constant="35" id="e8M-fT-glP"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kkh-HH-Lsx" customClass="CustomTextField" customModule="brainTeaser_DuBay" customModuleProvider="target">
+                                <rect key="frame" x="175" y="225" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.88373963789999999" green="0.88373963789999999" blue="0.88373963789999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="qQZ-bB-6wz"/>
+                                    <constraint firstAttribute="height" constant="40" id="r8p-7N-5WR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kkh-HH-Lsx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Brl-Or-x52"/>
+                            <constraint firstItem="Kkh-HH-Lsx" firstAttribute="top" secondItem="1am-Ty-Cys" secondAttribute="bottom" constant="35" id="F0E-tw-bpR"/>
+                            <constraint firstItem="1am-Ty-Cys" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SMr-lq-rdh"/>
+                            <constraint firstItem="9en-8M-26b" firstAttribute="centerX" secondItem="Kkh-HH-Lsx" secondAttribute="centerX" id="Sv6-OX-Xaf"/>
+                            <constraint firstItem="Xmn-v1-oux" firstAttribute="top" secondItem="9en-8M-26b" secondAttribute="bottom" constant="30" id="XKR-b9-7uc"/>
+                            <constraint firstItem="1am-Ty-Cys" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="kPI-vy-0iz"/>
+                            <constraint firstItem="9en-8M-26b" firstAttribute="top" secondItem="Kkh-HH-Lsx" secondAttribute="bottom" constant="25" id="qNW-ex-uE2"/>
+                            <constraint firstItem="Xmn-v1-oux" firstAttribute="centerX" secondItem="9en-8M-26b" secondAttribute="centerX" id="qoA-fe-KDG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="278" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="brain" width="650" height="588"/>
+    </resources>
 </document>
