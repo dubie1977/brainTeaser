@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="1am-Ty-Cys">
-                                <rect key="frame" x="220" y="30" width="160" height="160"/>
+                                <rect key="frame" x="220" y="45" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="N1f-Dv-ban"/>
                                     <constraint firstAttribute="width" constant="160" id="uuF-iC-w57"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9en-8M-26b" customClass="CustomTextField" customModule="brainTeaser_DuBay" customModuleProvider="target">
-                                <rect key="frame" x="175" y="290" width="250" height="40"/>
+                                <rect key="frame" x="175" y="305" width="250" height="40"/>
                                 <color key="backgroundColor" red="0.88373963789999999" green="0.88373963789999999" blue="0.88373963789999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Bh0-JZ-ifc"/>
@@ -43,7 +43,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmn-v1-oux" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
-                                <rect key="frame" x="225" y="360" width="150" height="35"/>
+                                <rect key="frame" x="225" y="375" width="150" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="16t-ui-b90"/>
@@ -58,7 +58,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kkh-HH-Lsx" customClass="CustomTextField" customModule="brainTeaser_DuBay" customModuleProvider="target">
-                                <rect key="frame" x="175" y="225" width="250" height="40"/>
+                                <rect key="frame" x="175" y="240" width="250" height="40"/>
                                 <color key="backgroundColor" red="0.88373963789999999" green="0.88373963789999999" blue="0.88373963789999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="qQZ-bB-6wz"/>
@@ -83,11 +83,16 @@
                             <constraint firstItem="1am-Ty-Cys" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SMr-lq-rdh"/>
                             <constraint firstItem="9en-8M-26b" firstAttribute="centerX" secondItem="Kkh-HH-Lsx" secondAttribute="centerX" id="Sv6-OX-Xaf"/>
                             <constraint firstItem="Xmn-v1-oux" firstAttribute="top" secondItem="9en-8M-26b" secondAttribute="bottom" constant="30" id="XKR-b9-7uc"/>
-                            <constraint firstItem="1am-Ty-Cys" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="kPI-vy-0iz"/>
+                            <constraint firstItem="1am-Ty-Cys" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="kPI-vy-0iz"/>
                             <constraint firstItem="9en-8M-26b" firstAttribute="top" secondItem="Kkh-HH-Lsx" secondAttribute="bottom" constant="25" id="qNW-ex-uE2"/>
                             <constraint firstItem="Xmn-v1-oux" firstAttribute="centerX" secondItem="9en-8M-26b" secondAttribute="centerX" id="qoA-fe-KDG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailConstraint" destination="Brl-Or-x52" id="gQb-Rn-Nfv"/>
+                        <outlet property="loginConstraint" destination="qoA-fe-KDG" id="r90-e4-NIv"/>
+                        <outlet property="passwordConstraint" destination="Sv6-OX-Xaf" id="l2P-fa-nuM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
