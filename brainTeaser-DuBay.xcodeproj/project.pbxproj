@@ -17,6 +17,9 @@
 		8C9481B11D7E24B6009DE57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9481B01D7E24B6009DE57D /* Assets.xcassets */; };
 		8C9481B41D7E24B6009DE57D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9481B21D7E24B6009DE57D /* LaunchScreen.storyboard */; };
 		8C9481C11D7E3BB4009DE57D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9481C01D7E3BB4009DE57D /* CustomTextField.swift */; };
+		8CA0C3E51D8BBBA200A6E7CD /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA0C3E41D8BBBA200A6E7CD /* GameVC.swift */; };
+		8CA0C3E71D8BBD9300A6E7CD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA0C3E61D8BBD9300A6E7CD /* Card.swift */; };
+		8CA0C3E91D8BBDB600A6E7CD /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA0C3E81D8BBDB600A6E7CD /* Card.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		8C9481B51D7E24B6009DE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C9481BB1D7E2983009DE57D /* brainTeaser-DuBay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "brainTeaser-DuBay-Bridging-Header.h"; sourceTree = "<group>"; };
 		8C9481C01D7E3BB4009DE57D /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8CA0C3E41D8BBBA200A6E7CD /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		8CA0C3E61D8BBD9300A6E7CD /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8CA0C3E81D8BBDB600A6E7CD /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 		AC9D4F18E80799157D0E7AE3 /* Pods_brainTeaser_DuBay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brainTeaser_DuBay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +120,8 @@
 			children = (
 				8C9481C01D7E3BB4009DE57D /* CustomTextField.swift */,
 				8C822C051D7E80B7007C121B /* CustomButton.swift */,
+				8CA0C3E61D8BBD9300A6E7CD /* Card.swift */,
+				8CA0C3E81D8BBDB600A6E7CD /* Card.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9481A81D7E24B6009DE57D /* LogInVC.swift */,
+				8CA0C3E41D8BBBA200A6E7CD /* GameVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 				8C9481B41D7E24B6009DE57D /* LaunchScreen.storyboard in Resources */,
 				8C9481B11D7E24B6009DE57D /* Assets.xcassets in Resources */,
 				8C9481AC1D7E24B6009DE57D /* Main.storyboard in Resources */,
+				8CA0C3E91D8BBDB600A6E7CD /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +263,10 @@
 				8C9481A91D7E24B6009DE57D /* LogInVC.swift in Sources */,
 				8C822C091D7FE2F9007C121B /* AnimationEngine.swift in Sources */,
 				8C9481AF1D7E24B6009DE57D /* brainTeaser_DuBay.xcdatamodeld in Sources */,
+				8CA0C3E51D8BBBA200A6E7CD /* GameVC.swift in Sources */,
 				8C9481A71D7E24B6009DE57D /* AppDelegate.swift in Sources */,
 				8C822C061D7E80B7007C121B /* CustomButton.swift in Sources */,
+				8CA0C3E71D8BBD9300A6E7CD /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

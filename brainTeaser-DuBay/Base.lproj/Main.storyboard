@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Log InVC-->
@@ -56,6 +57,9 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Kqg-Bc-KXm" kind="show" id="xGp-Ga-4d1"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kkh-HH-Lsx" customClass="CustomTextField" customModule="brainTeaser_DuBay" customModuleProvider="target">
                                 <rect key="frame" x="175" y="240" width="250" height="40"/>
@@ -96,7 +100,76 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="429"/>
+            <point key="canvasLocation" x="-333" y="530"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="kGS-tl-ckN">
+            <objects>
+                <viewController id="Kqg-Bc-KXm" customClass="GameVC" customModule="brainTeaser_DuBay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PDN-sy-wNp"/>
+                        <viewControllerLayoutGuide type="bottom" id="3No-yH-fux"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dkk-tO-14R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOI-Fa-KuL" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
+                                <rect key="frame" x="20" y="545" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Ffa-34-ug5"/>
+                                    <constraint firstAttribute="height" constant="35" id="bDz-BP-0Ao"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="No"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r9-Kw-R4M" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
+                                <rect key="frame" x="430" y="545" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="qgO-wn-sio"/>
+                                    <constraint firstAttribute="width" constant="150" id="w8x-37-sKx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remeber This Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRO-kM-uxI">
+                                <rect key="frame" x="200" y="75" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kiY-oQ-Gyd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3No-yH-fux" firstAttribute="top" secondItem="0r9-Kw-R4M" secondAttribute="bottom" constant="20" id="7cV-TF-GOX"/>
+                            <constraint firstItem="0r9-Kw-R4M" firstAttribute="trailing" secondItem="Dkk-tO-14R" secondAttribute="trailingMargin" id="AkM-9B-hMp"/>
+                            <constraint firstItem="OOI-Fa-KuL" firstAttribute="leading" secondItem="Dkk-tO-14R" secondAttribute="leadingMargin" id="nLa-oZ-F4h"/>
+                            <constraint firstItem="uRO-kM-uxI" firstAttribute="centerX" secondItem="Dkk-tO-14R" secondAttribute="centerX" id="rVw-K4-R9e"/>
+                            <constraint firstItem="3No-yH-fux" firstAttribute="top" secondItem="OOI-Fa-KuL" secondAttribute="bottom" constant="20" id="vqF-UX-Exk"/>
+                            <constraint firstItem="uRO-kM-uxI" firstAttribute="top" secondItem="Dkk-tO-14R" secondAttribute="topMargin" constant="75" id="xRx-Rm-0LP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTU-vh-sCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="530"/>
         </scene>
     </scenes>
     <resources>
