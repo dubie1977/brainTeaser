@@ -7,29 +7,79 @@
 //
 
 import UIKit
+import pop
 
 class GameVC: UIViewController {
 
+    @IBOutlet weak var yesButton: CustomButton!
+    @IBOutlet weak var noButton: CustomButton!
+    @IBOutlet weak var titleLbl: UILabel!
+    
+    var currentCard: Card!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        currentCard = createCardFromNib()
+        currentCard.center = AnimationEngine.screenCenterPosition
+        self.view.addSubview(currentCard)
 
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func yesPressed(sender: UIButton){
+        
+        if sender.titleLabel?.text == "YES"{
+            checkAnswer()
+        } else {
+            titleLbl.text = "Does this card match the previous?"
+        }
+        showNextCard()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func noPressed(sender: UIButton){
+        checkAnswer()
+        showNextCard()
     }
-    */
+    
+    func showNextCard(){
+        
+        if let current = currentCard{
+            let cardToRemove = current
+            currentCard = nil
+            
+            AnimationEngine.animateToPosition(cardToRemove, position: AnimationEngine.offScreenLeftPosition, completion: { (anim: POPAnimation!, finished: Bool) in
+                cardToRemove.removeFromSuperview()
+            })
+        }
+        
+        if let next = createCardFromNib(){
+            next.center = AnimationEngine.offScreenRightPosition
+            self.view.addSubview(next)
+            currentCard = next
+            
+            if noButton.hidden{
+                noButton.hidden = false
+                yesButton.setTitle("YES", forState: .Normal)
+            }
+            
+            AnimationEngine.animateToPosition(next, position: AnimationEngine.screenCenterPosition, completion: { (anim:POPAnimation!, finished: Bool) in
+                
+            })
+        }
+        
+    }
+    
+    func createCardFromNib() -> Card?{
+        return NSBundle.mainBundle().loadNibNamed("Card", owner: self, options: nil)[0] as? Card
+        
+    }
+    
+    func checkAnswer(){
+    
+    }
+    
+    
+
 
 }

@@ -129,6 +129,9 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="noPressed:" destination="Kqg-Bc-KXm" eventType="touchUpInside" id="JRI-DP-1fJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r9-Kw-R4M" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
                                 <rect key="frame" x="430" y="545" width="150" height="35"/>
@@ -145,6 +148,9 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="yesPressed:" destination="Kqg-Bc-KXm" eventType="touchUpInside" id="i3I-JH-vQH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remeber This Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRO-kM-uxI">
                                 <rect key="frame" x="200" y="75" width="200" height="21"/>
@@ -166,6 +172,11 @@
                             <constraint firstItem="uRO-kM-uxI" firstAttribute="top" secondItem="Dkk-tO-14R" secondAttribute="topMargin" constant="75" id="xRx-Rm-0LP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noButton" destination="OOI-Fa-KuL" id="0DQ-NA-4jk"/>
+                        <outlet property="titleLbl" destination="uRO-kM-uxI" id="cVI-yL-lrV"/>
+                        <outlet property="yesButton" destination="0r9-Kw-R4M" id="14Z-1o-GTB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTU-vh-sCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -25,6 +25,9 @@
                 <constraint firstItem="LvE-FG-HdE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w0F-ka-ee9"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="shapeImage" destination="LvE-FG-HdE" id="LLy-xe-y2g"/>
+            </connections>
         </view>
     </objects>
     <resources>

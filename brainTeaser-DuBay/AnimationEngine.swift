@@ -12,11 +12,11 @@ import pop
 class AnimationEngine{
 
     class var offScreenRightPosition: CGPoint{
-        return CGPointMake(UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+        return CGPointMake(UIScreen.mainScreen().bounds.width, CGRectGetMidY(UIScreen.mainScreen().bounds))
     }
     
     class var offScreenLeftPosition: CGPoint{
-        return CGPointMake(-UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+        return CGPointMake(-UIScreen.mainScreen().bounds.width, CGRectGetMidY(UIScreen.mainScreen().bounds))
     }
     
     class var screenCenterPosition: CGPoint{
@@ -65,6 +65,15 @@ class AnimationEngine{
             }while (index < self.constraints.count)
         }
         
+    }
+    
+    class func animateToPosition(view: UIView, position: CGPoint, completion: ((POPAnimation!, Bool) -> Void)){
+        let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayerPosition)
+        moveAnim.toValue = NSValue(CGPoint: position)
+        moveAnim.springBounciness = 8
+        moveAnim.springSpeed = 8
+        moveAnim.completionBlock = completion
+        view.pop_addAnimation(moveAnim, forKey: "moveToPosition")
         
     }
 

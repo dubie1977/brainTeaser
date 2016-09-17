@@ -32,7 +32,9 @@ class Card: UIView {
         self.layer.shadowRadius = 5.0
         self.layer.shadowOffset = CGSizeMake(0.0, 2.0)
         self.layer.shadowColor = UIColor(red: 157.0/255, green: 157.0/255.0, blue: 157.0/255.0, alpha: 1.0).CGColor
+        self.layer.cornerRadius = cornerRadius
         self.setNeedsLayout()
+        
     }
     
     func selectShape(){
@@ -40,5 +42,7 @@ class Card: UIView {
         shapeImage.image = UIImage(named: currentShape)
         
     }
+    
+    
 
 }
