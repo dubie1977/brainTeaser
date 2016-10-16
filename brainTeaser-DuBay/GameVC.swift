@@ -27,7 +27,7 @@ class GameVC: UIViewController {
     }
 
     
-    @IBAction func yesPressed(sender: UIButton){
+    @IBAction func yesPressed(_ sender: UIButton){
         
         if sender.titleLabel?.text == "YES"{
             checkAnswer()
@@ -37,7 +37,7 @@ class GameVC: UIViewController {
         showNextCard()
     }
     
-    @IBAction func noPressed(sender: UIButton){
+    @IBAction func noPressed(_ sender: UIButton){
         checkAnswer()
         showNextCard()
     }
@@ -48,7 +48,7 @@ class GameVC: UIViewController {
             let cardToRemove = current
             currentCard = nil
             
-            AnimationEngine.animateToPosition(cardToRemove, position: AnimationEngine.offScreenLeftPosition, completion: { (anim: POPAnimation!, finished: Bool) in
+            AnimationEngine.animateToPosition(cardToRemove, position: AnimationEngine.offScreenLeftPosition, completion: { (anim: POPAnimation?, finished: Bool) in
                 cardToRemove.removeFromSuperview()
             })
         }
@@ -58,12 +58,12 @@ class GameVC: UIViewController {
             self.view.addSubview(next)
             currentCard = next
             
-            if noButton.hidden{
-                noButton.hidden = false
-                yesButton.setTitle("YES", forState: .Normal)
+            if noButton.isHidden{
+                noButton.isHidden = false
+                yesButton.setTitle("YES", for: UIControlState())
             }
             
-            AnimationEngine.animateToPosition(next, position: AnimationEngine.screenCenterPosition, completion: { (anim:POPAnimation!, finished: Bool) in
+            AnimationEngine.animateToPosition(next, position: AnimationEngine.screenCenterPosition, completion: { (anim:POPAnimation?, finished: Bool) in
                 
             })
         }
@@ -71,7 +71,7 @@ class GameVC: UIViewController {
     }
     
     func createCardFromNib() -> Card?{
-        return NSBundle.mainBundle().loadNibNamed("Card", owner: self, options: nil)[0] as? Card
+        return Bundle.main.loadNibNamed("Card", owner: self, options: nil)?[0] as? Card
         
     }
     

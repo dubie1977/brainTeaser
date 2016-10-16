@@ -105,7 +105,6 @@
 				8C9481BF1D7E3B7B009DE57D /* Controller */,
 				8C9481BE1D7E3B70009DE57D /* View */,
 				8C9481A61D7E24B6009DE57D /* AppDelegate.swift */,
-				8C9481AA1D7E24B6009DE57D /* Main.storyboard */,
 				8C9481B01D7E24B6009DE57D /* Assets.xcassets */,
 				8C9481B21D7E24B6009DE57D /* LaunchScreen.storyboard */,
 				8C9481B51D7E24B6009DE57D /* Info.plist */,
@@ -122,6 +121,7 @@
 				8C822C051D7E80B7007C121B /* CustomButton.swift */,
 				8CA0C3E61D8BBD9300A6E7CD /* Card.swift */,
 				8CA0C3E81D8BBDB600A6E7CD /* Card.xib */,
+				8C9481AA1D7E24B6009DE57D /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -171,6 +171,7 @@
 					8C9481A21D7E24B6009DE57D = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = FYBTU7NK34;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -390,6 +391,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "brainTeaser-DuBay/brainTeaser-DuBay-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -405,6 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.designs.dubay.brainTeaser-DuBay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "brainTeaser-DuBay/brainTeaser-DuBay-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

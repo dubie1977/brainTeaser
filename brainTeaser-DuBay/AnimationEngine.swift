@@ -12,15 +12,15 @@ import pop
 class AnimationEngine{
 
     class var offScreenRightPosition: CGPoint{
-        return CGPointMake(UIScreen.mainScreen().bounds.width, CGRectGetMidY(UIScreen.mainScreen().bounds))
+        return CGPoint(x: UIScreen.main.bounds.width, y: UIScreen.main.bounds.midY)
     }
     
     class var offScreenLeftPosition: CGPoint{
-        return CGPointMake(-UIScreen.mainScreen().bounds.width, CGRectGetMidY(UIScreen.mainScreen().bounds))
+        return CGPoint(x: -UIScreen.main.bounds.width, y: UIScreen.main.bounds.midY)
     }
     
     class var screenCenterPosition: CGPoint{
-        return CGPointMake(CGRectGetMidX(UIScreen.mainScreen().bounds), CGRectGetMidY(UIScreen.mainScreen().bounds))
+        return CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
     }
     
     let ANIM_DELAY = 0.8
@@ -38,27 +38,27 @@ class AnimationEngine{
         
     }
     
-    func animateOnScreen(delay: Double?){
+    func animateOnScreen(_ delay: Double?){
         
         let d = delay == nil ? ANIM_DELAY * Double(NSEC_PER_SEC) : delay! * Double(NSEC_PER_SEC)
-        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(d))
+        let time = DispatchTime.now() + Double(Int64(d)) / Double(NSEC_PER_SEC)
         
-        dispatch_after(time, dispatch_get_main_queue()){
+        DispatchQueue.main.asyncAfter(deadline: time){
             
             var index = 0
             repeat{
                 let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-                moveAnim.toValue = self.originalConstants[index]
-                moveAnim.springBounciness = 12
-                moveAnim.springSpeed = 10
+                moveAnim?.toValue = self.originalConstants[index]
+                moveAnim?.springBounciness = 12
+                moveAnim?.springSpeed = 10
                 
                 if(index > 0){
-                    moveAnim.dynamicsFriction += 10 + CGFloat(index)
-                    moveAnim.dynamicsMass = 2
+                    moveAnim?.dynamicsFriction += 10 + CGFloat(index)
+                    moveAnim?.dynamicsMass = 2
                 }
                 
                 let con = self.constraints[index]
-                con.pop_addAnimation(moveAnim, forKey: "moveOnScreen")
+                con.pop_add(moveAnim, forKey: "moveOnScreen")
                 
                 index += 1
                 
@@ -67,13 +67,13 @@ class AnimationEngine{
         
     }
     
-    class func animateToPosition(view: UIView, position: CGPoint, completion: ((POPAnimation!, Bool) -> Void)){
+    class func animateToPosition(_ view: UIView, position: CGPoint, completion: @escaping ((POPAnimation?, Bool) -> Void)){
         let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayerPosition)
-        moveAnim.toValue = NSValue(CGPoint: position)
-        moveAnim.springBounciness = 8
-        moveAnim.springSpeed = 8
-        moveAnim.completionBlock = completion
-        view.pop_addAnimation(moveAnim, forKey: "moveToPosition")
+        moveAnim?.toValue = NSValue(cgPoint: position)
+        moveAnim?.springBounciness = 8
+        moveAnim?.springSpeed = 8
+        moveAnim?.completionBlock = completion
+        view.pop_add(moveAnim, forKey: "moveToPosition")
         
     }
 

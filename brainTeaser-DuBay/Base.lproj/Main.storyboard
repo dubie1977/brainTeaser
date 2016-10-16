@@ -153,9 +153,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remeber This Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRO-kM-uxI">
-                                <rect key="frame" x="200" y="75" width="200" height="21"/>
+                                <rect key="frame" x="150" y="75" width="300" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="kiY-oQ-Gyd"/>
+                                    <constraint firstAttribute="width" constant="300" id="kiY-oQ-Gyd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

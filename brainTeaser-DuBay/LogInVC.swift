@@ -25,7 +25,7 @@ class LogInVC: UIViewController {
         self.animEngine = AnimationEngine(constraints: [emailConstraint, passwordConstraint, loginConstraint])
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         self.animEngine.animateOnScreen(1)
     }
 
