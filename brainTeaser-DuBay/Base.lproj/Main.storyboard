@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Log InVC-->
@@ -15,19 +16,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="1am-Ty-Cys">
-                                <rect key="frame" x="220" y="45" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="N1f-Dv-ban"/>
                                     <constraint firstAttribute="width" constant="160" id="uuF-iC-w57"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9en-8M-26b" customClass="CustomTextField" customModule="brainTeaser_DuBay" customModuleProvider="target">
-                                <rect key="frame" x="175" y="305" width="250" height="40"/>
-                                <color key="backgroundColor" red="0.88373963789999999" green="0.88373963789999999" blue="0.88373963789999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.88373963789999999" green="0.88373963789999999" blue="0.88373963789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Bh0-JZ-ifc"/>
                                     <constraint firstAttribute="width" constant="250" id="Lqb-9g-xiu"/>
@@ -44,13 +43,12 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmn-v1-oux" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
-                                <rect key="frame" x="225" y="375" width="150" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="16t-ui-b90"/>
                                     <constraint firstAttribute="height" constant="35" id="e8M-fT-glP"/>
                                 </constraints>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -62,8 +60,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kkh-HH-Lsx" customClass="CustomTextField" customModule="brainTeaser_DuBay" customModuleProvider="target">
-                                <rect key="frame" x="175" y="240" width="250" height="40"/>
-                                <color key="backgroundColor" red="0.88373963789999999" green="0.88373963789999999" blue="0.88373963789999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.88373963789999999" green="0.88373963789999999" blue="0.88373963789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="qQZ-bB-6wz"/>
                                     <constraint firstAttribute="height" constant="40" id="r8p-7N-5WR"/>
@@ -80,7 +77,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Kkh-HH-Lsx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Brl-Or-x52"/>
                             <constraint firstItem="Kkh-HH-Lsx" firstAttribute="top" secondItem="1am-Ty-Cys" secondAttribute="bottom" constant="35" id="F0E-tw-bpR"/>
@@ -111,49 +108,52 @@
                         <viewControllerLayoutGuide type="bottom" id="3No-yH-fux"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Dkk-tO-14R">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOI-Fa-KuL" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
-                                <rect key="frame" x="20" y="545" width="150" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Ffa-34-ug5"/>
-                                    <constraint firstAttribute="height" constant="35" id="bDz-BP-0Ao"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="No"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="noPressed:" destination="Kqg-Bc-KXm" eventType="touchUpInside" id="JRI-DP-1fJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r9-Kw-R4M" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
-                                <rect key="frame" x="430" y="545" width="150" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="qgO-wn-sio"/>
-                                    <constraint firstAttribute="width" constant="150" id="w8x-37-sKx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Start"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="yesPressed:" destination="Kqg-Bc-KXm" eventType="touchUpInside" id="i3I-JH-vQH"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rsj-rc-C78">
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOI-Fa-KuL" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="Ffa-34-ug5"/>
+                                            <constraint firstAttribute="height" constant="35" id="bDz-BP-0Ao"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vep-Q7-j3w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="No"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="noPressed:" destination="Kqg-Bc-KXm" eventType="touchUpInside" id="JRI-DP-1fJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r9-Kw-R4M" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Vdu-S2-1fa"/>
+                                            <constraint firstAttribute="height" constant="35" id="qgO-wn-sio"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="w8x-37-sKx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Start"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="yesPressed:" destination="Kqg-Bc-KXm" eventType="touchUpInside" id="i3I-JH-vQH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remeber This Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRO-kM-uxI">
-                                <rect key="frame" x="150" y="75" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="kiY-oQ-Gyd"/>
                                 </constraints>
@@ -162,16 +162,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3No-yH-fux" firstAttribute="top" secondItem="0r9-Kw-R4M" secondAttribute="bottom" constant="20" id="7cV-TF-GOX"/>
-                            <constraint firstItem="0r9-Kw-R4M" firstAttribute="trailing" secondItem="Dkk-tO-14R" secondAttribute="trailingMargin" id="AkM-9B-hMp"/>
-                            <constraint firstItem="OOI-Fa-KuL" firstAttribute="leading" secondItem="Dkk-tO-14R" secondAttribute="leadingMargin" id="nLa-oZ-F4h"/>
+                            <constraint firstItem="3No-yH-fux" firstAttribute="top" secondItem="Rsj-rc-C78" secondAttribute="bottom" constant="20" id="Xod-V5-Rks"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rsj-rc-C78" secondAttribute="trailing" id="nQa-KG-oMg"/>
                             <constraint firstItem="uRO-kM-uxI" firstAttribute="centerX" secondItem="Dkk-tO-14R" secondAttribute="centerX" id="rVw-K4-R9e"/>
-                            <constraint firstItem="3No-yH-fux" firstAttribute="top" secondItem="OOI-Fa-KuL" secondAttribute="bottom" constant="20" id="vqF-UX-Exk"/>
+                            <constraint firstItem="Rsj-rc-C78" firstAttribute="leading" secondItem="Dkk-tO-14R" secondAttribute="leadingMargin" id="vgm-u2-vPi"/>
                             <constraint firstItem="uRO-kM-uxI" firstAttribute="top" secondItem="Dkk-tO-14R" secondAttribute="topMargin" constant="75" id="xRx-Rm-0LP"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="noButton" destination="OOI-Fa-KuL" id="0DQ-NA-4jk"/>
                         <outlet property="titleLbl" destination="uRO-kM-uxI" id="cVI-yL-lrV"/>
