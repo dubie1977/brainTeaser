@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="1am-Ty-Cys">
@@ -108,10 +108,10 @@
                         <viewControllerLayoutGuide type="bottom" id="3No-yH-fux"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Dkk-tO-14R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rsj-rc-C78">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rsj-rc-C78">
                                 <subviews>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOI-Fa-KuL" customClass="CustomButton" customModule="brainTeaser_DuBay" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -161,10 +161,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vv8-om-UzU">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vv8-om-UzU" firstAttribute="top" secondItem="uRO-kM-uxI" secondAttribute="bottom" constant="5" id="Hqx-Oa-ybC"/>
                             <constraint firstItem="3No-yH-fux" firstAttribute="top" secondItem="Rsj-rc-C78" secondAttribute="bottom" constant="20" id="Xod-V5-Rks"/>
+                            <constraint firstItem="vv8-om-UzU" firstAttribute="centerX" secondItem="Dkk-tO-14R" secondAttribute="centerX" id="fBa-LC-j2U"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rsj-rc-C78" secondAttribute="trailing" id="nQa-KG-oMg"/>
                             <constraint firstItem="uRO-kM-uxI" firstAttribute="centerX" secondItem="Dkk-tO-14R" secondAttribute="centerX" id="rVw-K4-R9e"/>
                             <constraint firstItem="Rsj-rc-C78" firstAttribute="leading" secondItem="Dkk-tO-14R" secondAttribute="leadingMargin" id="vgm-u2-vPi"/>
@@ -175,6 +182,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="noButton" destination="OOI-Fa-KuL" id="0DQ-NA-4jk"/>
+                        <outlet property="numberRightLbl" destination="vv8-om-UzU" id="OJH-Uo-a5o"/>
                         <outlet property="titleLbl" destination="uRO-kM-uxI" id="cVI-yL-lrV"/>
                         <outlet property="yesButton" destination="0r9-Kw-R4M" id="14Z-1o-GTB"/>
                     </connections>

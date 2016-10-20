@@ -14,8 +14,12 @@ class GameVC: UIViewController {
     @IBOutlet weak var yesButton: CustomButton!
     @IBOutlet weak var noButton: CustomButton!
     @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var numberRightLbl: UILabel!
     
     var currentCard: Card!
+    var lastCard: Card?
+    var numberRight = 0
+    var totalAnswers = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +34,7 @@ class GameVC: UIViewController {
     @IBAction func yesPressed(_ sender: UIButton){
         
         if sender.titleLabel?.text == "YES"{
-            checkAnswer()
+            checkAnswer(answer: true)
         } else {
             titleLbl.text = "Does this card match the previous?"
         }
@@ -38,14 +42,17 @@ class GameVC: UIViewController {
     }
     
     @IBAction func noPressed(_ sender: UIButton){
-        checkAnswer()
+        checkAnswer(answer: false)
         showNextCard()
     }
     
     func showNextCard(){
+        numberRightLbl.text = "You have been right \(numberRight) times out of \(totalAnswers)"
+        numberRightLbl.isHidden = false
         
         if let current = currentCard{
             let cardToRemove = current
+            lastCard = current
             currentCard = nil
             
             AnimationEngine.animateToPosition(cardToRemove, position: AnimationEngine.offScreenLeftPosition, completion: { (anim: POPAnimation?, finished: Bool) in
@@ -75,8 +82,26 @@ class GameVC: UIViewController {
         
     }
     
-    func checkAnswer(){
-    
+    func checkAnswer(answer: Bool){
+        
+        if let last = lastCard{
+            if (last.currentShape == currentCard.currentShape){
+                if(answer){
+                    numberRight += 1
+                    print(numberRight)
+                } else {
+                    print("wrong")
+                }
+            } else if(!answer){
+                numberRight += 1
+                print(numberRight)
+            } else{
+                print("wrong")
+            }
+        }
+        
+        totalAnswers += 1
+        
     }
     
     
